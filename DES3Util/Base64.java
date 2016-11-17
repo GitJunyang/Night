@@ -6,7 +6,7 @@ import java.io.OutputStream;
   
 /**
  * Base64编码工具类  
- * @author liu
+ * @author liu.
  *
  */
 public class Base64 {  
