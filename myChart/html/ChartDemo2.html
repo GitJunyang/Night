@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>echart-demo</title>
+<script type="text/javascript" src="../js/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="../js/echarts-2.2.7/doc/asset/js/esl/esl.js"></script> 
+<script type="text/javascript" src="../js/echarts-2.2.7/build/dist/echarts.js"></script>
+</head>
+<body>
+
+
+<script type="text/javascript">
+			/*
+			* 按需加载
+			* 引入echart.js依赖的zrender.js, 再引入echart.js
+			*/
+			require.config({
+				paths: 
+					{
+						echarts: '../js/echarts-2.2.7/build/dist',
+						zrender:'../js/zrender-2.1.1/buid'
+					}
+			});
+			/*
+			*按需加载
+			*/
+			require(
+				[
+					'echarts',
+					'echarts/chart/map'
+				],
+				//渲染ECharts图表
+				function (ec) {
+						// 基于准备好的dom，初始化echarts图表
+						var myChart = ec.init(document.getElementById('main'));
+						// 过渡---------------------
+						myChart.showLoading({
+							text: '正在努力的读取数据中...'    //loading话术
+						});
+
+						// ajax getting data...............
+
+						// ajax callback
+						myChart.hideLoading();
+						var option = {
+							tooltip : {
+								trigger: 'item'
+							},
+							dataRange: {
+								x: 'left',
+								y: '200',
+								splitList: [
+									{start: 1}
+								],
+								color: ['#92E4E4', '#B0F9F9']
+							},
+							toolbox: {
+								y: 'top',
+								show: true,
+								feature: {
+									restore: { 'show': true },
+									saveAsImage: { 'show': true }
+								}
+							},
+							series: [
+								{
+									tooltip: {
+										trigger: 'item'
+									},
+									name: 'echart地图',
+									type: 'map',
+									mapType: '陕西',
+									mapLocation: {//显示主地图的位置及其大小
+										x: 'center',
+										y: 'top',
+										width: '50%'
+									},
+									roam: false,//地图不允许拖动
+									selectedMode : 'single',
+									itemStyle:{
+										normal:{label:{show:true},borderWidth: 2},
+										emphasis:{label:{show:true},borderWidth: 2}
+									},
+						
+									data:[{name: '榆林市',  selected:false,value: '321', code:'sx_yl'},
+											 {name: '安康市',  selected:false,value: '321', code:'sx_ak'},
+											 {name: '宝鸡市',  selected:false,value: '321', code:'sx_bj'},
+											 {name: '汉中市',  selected:false,value: '321', code:'sx_hz'},
+											 {name: '商洛市',  selected:false,value: '321', code:'sx_sl'},
+											 {name: '铜川市',  selected:false,value: '321', code:'sx_tc'},
+											 {name: '渭南市',  selected:false,value: '321', code:'sx_wn'},
+											 {name: '西安市',  selected:false,value: '321', code:'sx_xa'},
+											 {name: '咸阳市',  selected:false,value: '321', code:'sx_xy'},
+											 {name: '延安市',  selected:false,value: '321', code:'sx_ya'}],
+									
+									itemStyle: {
+										normal: {               //背景样式
+											// color: 各异,
+											borderColor: 'white',
+											borderWidth: 2,
+											areaStyle: {
+												color: '#5555AA'
+											},
+											label: {
+												show: true,
+												textStyle: {
+													color: '#000000'
+												}
+											}
+										},
+										emphasis: {                 // 强调选中样式
+											// color: 各异,
+											borderColor: 'white',
+											borderWidth: 2,
+											areaStyle: {
+												color: '#A0D5F8'
+											},
+											label: {
+												show: true,
+												textStyle: {
+													color: '#000000'
+												}
+											}
+										}
+									}
+								}
+							],
+							animation: false
+						};
+						    myChart.setOption(option, true);
+							
+						    var ecConfig = require('echarts/config');
+						    myChart.on(ecConfig.EVENT.MAP_SELECTED, function (param) {
+							var selected = param.selected;
+							var selectedProvince;
+							var name;
+							var code;
+							
+							var data=option.series[0].data;
+							
+							for (var i = 0 ; i <= data.length; i++) {
+								if(data[i]!=undefined){
+									name = data[i].name;
+									
+									data[i].selected = selected[name];
+									
+									//console.log(data[i].selected);
+									//data[i].selected = true;
+									option.series[0].mapLocation = {
+										x: 'left',
+										y: 'top',
+										width: '30%'
+									};
+									option.series[0].tooltip = {
+										trigger: 'item'
+										
+									}
+									if (selected[name]) {
+										selectedProvince = name;
+										code=data[i].code;
+									}
+								}
+							}
+							
+							var cityMap="{'"+selectedProvince+"':'"+code+"'}";
+							cityMap=eval('(' + cityMap + ')'); 
+							var curIndx = 0;
+							var mapType = [];
+							var mapGeoData = require('echarts/util/mapData/params');
+							console.log(mapGeoData);
+							for (var city in cityMap){
+								mapType.push(city);
+								// 自定义扩展图表类型
+								mapGeoData.params[city] = {
+									getGeoJson: (function (c) {
+										var geoJsonName = cityMap[c];
+										//console.log(geoJsonName);
+										return function (callback) {
+											$.getJSON('../js/geoJson/' + geoJsonName + '.json', callback);
+										}
+									})(city)
+								}
+								
+							}
+							if (typeof selectedProvince == 'undefined') {
+							
+								return;            //当市下面没有数据时，不能进入  也可以进入下面注释的代码就是没有数据也可以点击
+							}
+							option.tooltip = {
+								trigger: 'item'
+								
+							};
+
+							option.series[1] = {
+								name: '数据统计',
+								type: 'map',
+								mapType: selectedProvince,
+								itemStyle:{
+									normal:{label:{show:true},borderWidth: 2},//没选择时候省份是否显示
+									emphasis:{label:{show:true}}//选择之后省份是否显示
+								},
+								mapLocation: {//显示子地图的位置及其大小
+									x: '500',
+									y: 'top',
+									width: '50%'
+								},
+								roam: false,//地图不允许拖动
+								data:[{name: '榆阳区',value: Math.round(Math.random()*1000)},
+								{name: '府谷县',value: Math.round(Math.random()*1000)},
+								{name: '横山区',value: Math.round(Math.random()*1000)},
+								{name: '神木县',value: Math.round(Math.random()*1000)},
+								{name: '佳县',value: Math.round(Math.random()*1000)},
+								{name: '米脂县',value: Math.round(Math.random()*1000)},
+								{name: '靖边县',value: Math.round(Math.random()*1000)},
+								{name: '子洲县',value: Math.round(Math.random()*1000)},
+								{name: '绥德县',value: Math.round(Math.random()*1000)},
+								{name: '吴堡县',value: Math.round(Math.random()*1000)},
+								{name: '清涧县',value: Math.round(Math.random()*1000)},
+								{name: '靖边县',value: Math.round(Math.random()*1000)},
+								{name: '定边县',value: Math.round(Math.random()*1000)}]
+								};
+							option.dataRange = {
+								orient: 'horizontal',
+								x: 'right',
+								min: 0,
+								max: 1000,
+								color:['#A0F8F8','#C4E6E6','#C0FAFA']//,
+								//text:['高','低']//,           // 文本，默认为数值文本
+								//splitNumber:0
+							};
+							myChart.setOption(option, true);
+							window.onresize = myChart.resize;//自适应
+						})
+				});
+</script>
+<div id="main" style='height:800px;'></div>
+		
+</body>
+
+</html>
