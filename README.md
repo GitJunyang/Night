@@ -2,21 +2,21 @@
 
 一.收藏网址:
 
-1.资料大全网站:
-   (1)菜鸟教程  http://www.runoob.com/
+1.资料大全网站:  <br/>
+   (1)菜鸟教程  http://www.runoob.com/  <br/>
    (2)手册网  http://www.shouce.ren/
-   (3)深度开源  http://www.open-open.com/
-2.视频网站:
-   (1)慕课网  http://www.imooc.com/
-3.PPT:
-   (1) PPT宝藏  http://www.pptbz.com/	
-   (2) 第一PPT  http://www.1ppt.com/
-4.图表网站:
-   (1)百度echart图表 http://echarts.baidu.com/index.html
-5.Bootstrap:
-   (1) bootstrap3中文文档  http://v3.bootcss.com/getting-started/
-6.Maven:
-   (1) Eclipse新建一个基于maven的web项目  http://www.cnblogs.com/candle806/p/3439469.html
-7.Git:
-   (1) Git的详细使用  http://www.open-open.com/lib/view/open1414396787325.html
+   (3)深度开源  http://www.open-open.com/  <br/>
+2.视频网站:  <br/>
+   (1)慕课网  http://www.imooc.com/  <br/>
+3.PPT:  <br/>
+   (1) PPT宝藏  http://www.pptbz.com/  <br/>
+   (2) 第一PPT  http://www.1ppt.com/  <br/>
+4.图表网站:  <br/>
+   (1)百度echart图表 http://echarts.baidu.com/index.html  <br/>
+5.Bootstrap:  <br/>
+   (1) bootstrap3中文文档  http://v3.bootcss.com/getting-started/  <br/>
+6.Maven:  <br/>
+   (1) Eclipse新建一个基于maven的web项目  http://www.cnblogs.com/candle806/p/3439469.html  <br/>
+7.Git:  <br/>
+   (1) Git的详细使用  http://www.open-open.com/lib/view/open1414396787325.html  <br/>
  
