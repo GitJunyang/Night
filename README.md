@@ -4,7 +4,7 @@
 
 1.资料大全网站:  <br/>
    (1)菜鸟教程  http://www.runoob.com/  <br/>
-   (2)手册网  http://www.shouce.ren/
+   (2)手册网  http://www.shouce.ren/  <br/>
    (3)深度开源  http://www.open-open.com/  <br/>
 2.视频网站:  <br/>
    (1)慕课网  http://www.imooc.com/  <br/>
@@ -19,4 +19,6 @@
    (1) Eclipse新建一个基于maven的web项目  http://www.cnblogs.com/candle806/p/3439469.html  <br/>
 7.Git:  <br/>
    (1) Git的详细使用  http://www.open-open.com/lib/view/open1414396787325.html  <br/>
+8. UI素材 <br/>
+   (1) 图片素材 http://588ku.com/ <br/>
  
