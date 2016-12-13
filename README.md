@@ -20,5 +20,5 @@
 7.Git:  <br/>
    (1) GitµÄÏêÏ¸Ê¹ÓÃ  http://www.open-open.com/lib/view/open1414396787325.html  <br/>
 8. UIËØ²Ä <br/>
-   (1) Í¼Æ¬ËØ²Ä http://588ku.com/ <br/>
+   (1) Ç§¿âÍø http://588ku.com/ <br/>
  
