@@ -23,5 +23,7 @@
    (1) 千库网 http://588ku.com/ <br/>
 9.软件文档资料网站 <br/>
    (1) 火龙果软件 http://www.uml.org.cn/index.asp <br/>
+10.HTML模板超赞素材 <br/>
+   (1) 稀土区 https://xituqu.com/ <br/>
 
  
