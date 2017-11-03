@@ -27,5 +27,6 @@
    (1) 稀土区 https://xituqu.com/ <br/>
 11.优秀博客 <br/>
    (1) 左耳朵耗子 https://coolshell.cn/featured   <br/>
+   (2) 设计模式   http://blog.csdn.net/column/details/des-pattern.html  <br/>
 
  
