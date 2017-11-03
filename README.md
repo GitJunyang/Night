@@ -1,29 +1,31 @@
 # Night
 
-Ò».ÊÕ²ØÍøÖ·:
+ä¸€.æ”¶è—ç½‘å€:
 
-1.×ÊÁÏ´óÈ«ÍøÕ¾:  <br/>
-   (1)²ËÄñ½Ì³Ì  http://www.runoob.com/  <br/>
-   (2)ÊÖ²áÍø  http://www.shouce.ren/  <br/>
-   (3)Éî¶È¿ªÔ´  http://www.open-open.com/  <br/>
-2.ÊÓÆµÍøÕ¾:  <br/>
-   (1)Ä½¿ÎÍø  http://www.imooc.com/  <br/>
+1.èµ„æ–™å¤§å…¨ç½‘ç«™:  <br/>
+   (1)èœé¸Ÿæ•™ç¨‹  http://www.runoob.com/  <br/>
+   (2)æ‰‹å†Œç½‘  http://www.shouce.ren/  <br/>
+   (3)æ·±åº¦å¼€æº  http://www.open-open.com/  <br/>
+2.è§†é¢‘ç½‘ç«™:  <br/>
+   (1)æ…•è¯¾ç½‘  http://www.imooc.com/  <br/>
 3.PPT:  <br/>
-   (1) PPT±¦²Ø  http://www.pptbz.com/  <br/>
-   (2) µÚÒ»PPT  http://www.1ppt.com/  <br/>
-4.Í¼±íÍøÕ¾:  <br/>
-   (1)°Ù¶ÈechartÍ¼±í http://echarts.baidu.com/index.html  <br/>
+   (1) PPTå®è—  http://www.pptbz.com/  <br/>
+   (2) ç¬¬ä¸€PPT  http://www.1ppt.com/  <br/>
+4.å›¾è¡¨ç½‘ç«™:  <br/>
+   (1)ç™¾åº¦echartå›¾è¡¨ http://echarts.baidu.com/index.html  <br/>
 5.Bootstrap:  <br/>
-   (1) bootstrap3ÖĞÎÄÎÄµµ  http://v3.bootcss.com/getting-started/  <br/>
+   (1) bootstrap3ä¸­æ–‡æ–‡æ¡£  http://v3.bootcss.com/getting-started/  <br/>
 6.Maven:  <br/>
-   (1) EclipseĞÂ½¨Ò»¸ö»ùÓÚmavenµÄwebÏîÄ¿  http://www.cnblogs.com/candle806/p/3439469.html  <br/>
+   (1) Eclipseæ–°å»ºä¸€ä¸ªåŸºäºmavençš„webé¡¹ç›®  http://www.cnblogs.com/candle806/p/3439469.html  <br/>
 7.Git:  <br/>
-   (1) GitµÄÏêÏ¸Ê¹ÓÃ  http://www.open-open.com/lib/view/open1414396787325.html  <br/>
-8. UIËØ²Ä <br/>
-   (1) Ç§¿âÍø http://588ku.com/ <br/>
-9.Èí¼şÎÄµµ×ÊÁÏÍøÕ¾ <br/>
-   (1) »ğÁú¹ûÈí¼ş http://www.uml.org.cn/index.asp <br/>
-10.HTMLÄ£°å³¬ÔŞËØ²Ä <br/>
-   (1) Ï¡ÍÁÇø https://xituqu.com/ <br/>
+   (1) Gitçš„è¯¦ç»†ä½¿ç”¨  http://www.open-open.com/lib/view/open1414396787325.html  <br/>
+8. UIç´ æ <br/>
+   (1) åƒåº“ç½‘ http://588ku.com/ <br/>
+9.è½¯ä»¶æ–‡æ¡£èµ„æ–™ç½‘ç«™ <br/>
+   (1) ç«é¾™æœè½¯ä»¶ http://www.uml.org.cn/index.asp <br/>
+10.HTMLæ¨¡æ¿è¶…èµç´ æ <br/>
+   (1) ç¨€åœŸåŒº https://xituqu.com/ <br/>
+11.ä¼˜ç§€åšå®¢ <br/>
+ Â  (1) å·¦è€³æœµè€—å­ https://coolshell.cn/featured   <br/>
 
  
