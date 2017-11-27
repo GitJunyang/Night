@@ -28,5 +28,7 @@
 11.优秀博客 <br/>
    (1) 左耳朵耗子 https://coolshell.cn/featured   <br/>
    (2) 设计模式   http://blog.csdn.net/column/details/des-pattern.html  <br/>
+12.SVN版本管理
+   (1) trunk/branchs/tags   http://blog.jobbole.com/106868/
 
  
