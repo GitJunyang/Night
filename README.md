@@ -31,7 +31,7 @@
 12.SVN版本管理
    (1) trunk/branchs/tags   http://blog.jobbole.com/106868/
 13.动态表单插件
-   (1) 基于jquery的 https://kevinchappell.github.io/formBuilder/
+   (1) 基于jquery的 https://kevinchappell.github.io/formBuilder/  https://github.com/kevinchappell/formBuilder
    (2) 基于bootstrap的 http://www.bootcss.com/p/bootstrap-form-builder/
 
  
